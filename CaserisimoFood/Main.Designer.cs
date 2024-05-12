@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             dtgvOrder = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            nombre = new DataGridViewTextBoxColumn();
-            direccion = new DataGridViewTextBoxColumn();
-            detalle = new DataGridViewTextBoxColumn();
-            pago = new DataGridViewTextBoxColumn();
-            precio = new DataGridViewTextBoxColumn();
-            delivery = new DataGridViewTextBoxColumn();
-            estado = new DataGridViewTextBoxColumn();
             txtName = new TextBox();
             txtPrice = new TextBox();
             txtAddress = new TextBox();
@@ -69,7 +61,6 @@
             dtgvOrder.AllowUserToAddRows = false;
             dtgvOrder.AllowUserToDeleteRows = false;
             dtgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvOrder.Columns.AddRange(new DataGridViewColumn[] { Id, nombre, direccion, detalle, pago, precio, delivery, estado });
             dtgvOrder.Location = new Point(328, 418);
             dtgvOrder.Margin = new Padding(4);
             dtgvOrder.Name = "dtgvOrder";
@@ -78,57 +69,6 @@
             dtgvOrder.TabIndex = 1;
             dtgvOrder.CellContentDoubleClick += dtgvOrder_CellContentDoubleClick;
             dtgvOrder.RowHeaderMouseDoubleClick += dtgvOrder_RowHeaderMouseDoubleClick;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "ID";
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            // 
-            // nombre
-            // 
-            nombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            nombre.HeaderText = "Nombre";
-            nombre.Name = "nombre";
-            nombre.ReadOnly = true;
-            // 
-            // direccion
-            // 
-            direccion.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            direccion.HeaderText = "Direccion";
-            direccion.Name = "direccion";
-            direccion.ReadOnly = true;
-            // 
-            // detalle
-            // 
-            detalle.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            detalle.HeaderText = "Detalle";
-            detalle.Name = "detalle";
-            detalle.ReadOnly = true;
-            // 
-            // pago
-            // 
-            pago.HeaderText = "Pago";
-            pago.Name = "pago";
-            pago.ReadOnly = true;
-            // 
-            // precio
-            // 
-            precio.HeaderText = "Precio";
-            precio.Name = "precio";
-            precio.ReadOnly = true;
-            // 
-            // delivery
-            // 
-            delivery.HeaderText = "Delivery";
-            delivery.Name = "delivery";
-            delivery.ReadOnly = true;
-            // 
-            // estado
-            // 
-            estado.HeaderText = "Estado";
-            estado.Name = "estado";
-            estado.ReadOnly = true;
             // 
             // txtName
             // 
@@ -214,7 +154,7 @@
             // cbxPaymentType
             // 
             cbxPaymentType.FormattingEnabled = true;
-            cbxPaymentType.Items.AddRange(new object[] { "EFECTIVO", "TRANSFERENCIA" });
+            cbxPaymentType.Items.AddRange(new object[] { "EFECT", "TRANSF" });
             cbxPaymentType.Location = new Point(770, 203);
             cbxPaymentType.Name = "cbxPaymentType";
             cbxPaymentType.Size = new Size(121, 27);
@@ -246,7 +186,6 @@
             lblDelivery.Size = new Size(66, 19);
             lblDelivery.TabIndex = 15;
             lblDelivery.Text = "Delivery";
-            lblDelivery.Click += label6_Click;
             // 
             // btnAdd
             // 
@@ -420,13 +359,5 @@
         private Button button4;
         private Button button5;
         private Button button6;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn nombre;
-        private DataGridViewTextBoxColumn direccion;
-        private DataGridViewTextBoxColumn detalle;
-        private DataGridViewTextBoxColumn pago;
-        private DataGridViewTextBoxColumn precio;
-        private DataGridViewTextBoxColumn delivery;
-        private DataGridViewTextBoxColumn estado;
     }
 }

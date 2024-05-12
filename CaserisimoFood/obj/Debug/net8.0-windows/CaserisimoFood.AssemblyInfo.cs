@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CaserisimoFood")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8479248dd4fbc91743e2cb9439031728984590d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CaserisimoFood")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaserisimoFood")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
